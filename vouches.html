@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vouches</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background: #0a0a0a;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    color: #c77dff;
+    text-shadow: 0 0 15px #9d4edd;
+    margin-bottom: 25px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .img-box {
+    background: rgba(157, 78, 221, 0.15);
+    border: 2px solid #9d4edd;
+    box-shadow: 0 0 15px #9d4edd80;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .img-box:hover {
+    box-shadow: 0 0 30px #c77dff, 0 0 60px #9d4edd;
+    transform: scale(1.05);
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a.back-link {
+    margin-top: 25px;
+    color: #9d4edd;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: flex-start;
+    transition: color 0.3s ease;
+  }
+
+  a.back-link:hover {
+    color: #c77dff;
+  }
+</style>
+</head>
+<body>
+
+<h1>Vouches</h1>
+
+<div class="gallery">
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 1"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 2"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 3"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 4"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 5"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 6"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 7"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 8"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 9"></div>
+  <div class="img-box"><img src="https://via.placeholder.com/400x300" alt="Vouch 10"></div>
+</div>
+
+<a href="index.html" class="back-link">← Back to Bio</a>
+
+</body>
+</html>
