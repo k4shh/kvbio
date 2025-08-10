@@ -5,42 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>$ KV Vouches</title>
 <style>
-  html, body {
-    margin: 0; padding: 0; height: 100vh; overflow: hidden;
+  body {
+    margin: 0;
+    padding: 20px;
     background: #0a0a0a;
     font-family: Arial, sans-serif;
     color: white;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   h1 {
     color: #c77dff;
     text-shadow: 0 0 15px #9d4edd;
-    margin: 15px 0;
+    margin-bottom: 20px;
     font-size: 2rem;
-    flex-shrink: 0;
   }
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    width: 95%;
-    max-width: 1300px;
-    flex-grow: 1;
-    overflow: hidden;
+    width: 100%;
+    height: 70%;
   }
 
   .media-box {
     background: rgba(157, 78, 221, 0.2);
     border: 2px solid #9d4edd;
     box-shadow: 0 0 20px #9d4eddaa;
-    border-radius: 14px;
+    border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
-    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,22 +55,16 @@
   .media-box video {
     width: 100%;
     height: 100%;
-    border-radius: 14px;
     object-fit: cover;
     display: block;
   }
 
-  video {
-    pointer-events: none; /* disable controls, clicking etc */
-  }
-
   a.back-link {
-    margin: 10px 0 15px;
+    margin-top: 15px;
     color: #9d4edd;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    flex-shrink: 0;
+    font-size: 16px;
     transition: color 0.3s ease;
   }
 
@@ -78,9 +72,10 @@
     color: #c77dff;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 900px) {
     .gallery {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
     }
   }
 </style>
@@ -92,32 +87,35 @@
 <div class="gallery">
 
   <div class="media-box">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.dropbox.com/scl/fi/gr5up6bsf9fjgnstbg6rw/vouch1.mp4?rlkey=uw4vfptcn6am88uuqu5z17rm3&st=3gcdz3a8&raw=1" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="media-box">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.dropbox.com/scl/fi/njyq8cn16a85ulodicmdd/vouch2.mp4?rlkey=0adzvmsd0tztdmhu4xanye15v&st=3mrruvv5&raw=1" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="media-box">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.dropbox.com/scl/fi/6yiei8nuxqq6nupvy6kpu/vouch3.mp4?rlkey=um896pe9nlsftfpdxy20m2qub&st=nrku8u37&raw=1" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="media-box">
     <img src="https://i.postimg.cc/KYPmPFGN/vouch4.jpg" alt="Vouch 4">
   </div>
 
   <div class="media-box">
     <video autoplay muted loop playsinline>
-      <source src="YOUR_DIRECT_MP4_LINK_1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="media-box">
-    <video autoplay muted loop playsinline>
-      <source src="YOUR_DIRECT_MP4_LINK_2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <source src="https://www.dropbox.com/scl/fi/y28768ssvcevhgwu8pb2m/vouch6.mp4?rlkey=8it5z3o5134vovd3dc8qxbla1&st=etpgz8wn&raw=1" type="video/mp4">
     </video>
   </div>
 
   <div class="media-box">
     <img src="https://i.postimg.cc/d0PqZDY3/vouch5.jpg" alt="Vouch 5">
-  </div>
-
-  <div class="media-box">
-    <video autoplay muted loop playsinline>
-      <source src="YOUR_DIRECT_MP4_LINK_3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
   </div>
 
   <div class="media-box">
