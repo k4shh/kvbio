@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bio Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .pfp {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #9d4edd;
+    box-shadow: 0 0 30px #9d4edd, 0 0 55px #7b2cbf;
+    background: url('https://i.postimg.cc/rs3Bc0jM/PFP.gif') no-repeat center/cover;
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px #9d4edd, 0 0 40px #7b2cbf;
+    }
+    to {
+      box-shadow: 0 0 35px #c77dff, 0 0 65px #9d4edd;
+    }
+  }
+
+  h1 {
+    font-size: 2em;
+    color: #c77dff;
+    text-shadow: 0 0 15px #9d4edd;
+    margin: 0;
+  }
+
+  .description {
+    font-size: 14px;
+    background: rgba(157, 78, 221, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9d4edd;
+    box-shadow: 0 0 20px #9d4edd40;
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .link-box {
+    display: block;
+    background: rgba(157, 78, 221, 0.15);
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #9d4edd;
+    box-shadow: 0 0 15px #9d4edd80;
+    transition: all 0.3s ease;
+  }
+
+  .link-box:hover {
+    background: #9d4edd;
+    color: white;
+    box-shadow: 0 0 30px #c77dff, 0 0 60px #9d4edd;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="pfp"></div>
+  <h1>$ KV</h1>
+  <div class="description">
+    Trusted seller with 65+ vouches. Quality guaranteed every time.
+  </div>
+
+  <div class="links">
+    <a href="https://tx61.sellauth.com" target="_blank" class="link-box">Website</a>
+    <a href="https://t.me/kvst0ck" target="_blank" class="link-box">KV Stock</a>
+    <a href="https://t.me/trumpm4rket" target="_blank" class="link-box">Trump Market</a>
+    <a href="https://t.me/kvgateway" target="_blank" class="link-box">Gateway</a>
+    <a href="vouches.html" class="link-box">Vouches</a>
+    <a href="https://t.me/kvbin_bot" target="_blank" class="link-box">Bin Bot</a>
+  </div>
+</div>
+
+</body>
+</html>
